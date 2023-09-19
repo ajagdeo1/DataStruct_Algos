@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class QuickFindUF {
     private int[] id;
     // initializes an array and sets value to itself
@@ -19,5 +21,9 @@ public class QuickFindUF {
         for(int i = 0; i < id.length; i++){
             if(id[p] == pid) id[p] = qid;
         }
+    }
+
+    public void printArray(){
+        System.out.println( "Quick Find\n "+ Arrays.toString(id));
     }
 }
