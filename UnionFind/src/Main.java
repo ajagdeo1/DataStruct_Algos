@@ -24,5 +24,11 @@ public class Main {
         union.union(1,8);
         union.printArray();
         System.out.println(union.connect(8,4));
+
+        PathCompression compression = new PathCompression(10);
+        compression.union(4,3);
+        compression.union(3,8);
+        compression.union(4,9);
+        compression.union(5,6);
     }
 }
